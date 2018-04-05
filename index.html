@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title> Typing Game </title>
+</head>
+<body>
+  <main>
+    <div class="background-unit">
+      <div class="background-image">
+      </div>
+    </div>
+
+    <h1>How many words can you type a minute?</h1>
+
+    <div class="player-status">
+      <div class="timer">
+        <h2 id="countdown">Time Remaining: <span> 5 </span> Seconds</h2>
+      </div>
+    </div>
+
+
+
+
+    <div class="main-portion">
+
+      <!-- Display Of Novel Text -->
+      <div class="novel-display">
+        <div id="main-text">pen head cut slip fought hard sleep affair go college get knowledge comb general assembly exhibit mother quake time to get serious wizened larynx have succinct amazing anonymous xylophone magnitude unbelievable visceral</div>
+      </div>
+
+    </div>
+    <!-- Word to type next -->
+    <div class="current-word">
+      <h2 id="current-word"></h2>
+    </div>
+
+    <div class="middle-half">
+
+
+      <!-- Letter's Being Pressed Display & Buttons -->
+      <div class="input-display">
+        <div class="strt-button">
+          <button id="start-btn"> Start!</button>
+        </div>
+
+
+        <div class="letter-display-main">
+          <input class="letter-display" disabled="disabled" name="input" placeholder=" <-- Click the Start button to begin! Hit space after every word">
+        </div>
+
+
+        <!-- Buttons for game start/new game -->
+        <div class="nwg-button">
+          <button id="new-game">New Game</button>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!-- Leader Board -->
+    <div class="leader-board">
+      <div class="score-player">
+        <h2>Correctly typed words: <span id="Player1"> 0</span></h2>
+      </div>
+      <div class="wrong-words">
+        <h2 class='wrong-word-font'>Words typed incorectly <span id="wrong-words"> 0</span></h2>
+      </div>
+    </div>
+
+
+    <div class="all">
+      <div class='feedback1 hidden'>
+        <p> Typing isnt your thing I see. Carry on practicsing! </p>
+      </div>
+      <div class='feedback2 hidden'>
+        <p> Your typing skills are below average. Hit 'New game' to continue practising. Pratice makes perfect!</p>
+      </div>
+      <div class='feedback3 hidden'>
+        <p> Nice! Your typing skills are average. Hit 'New game' to continue practising!</p>
+      </div>
+      <div class='feedback4 hidden'>
+        <p> Your typing skills are below average. Hit 'New game' to continue practising. Pratice makes perfect!</p>
+      </div>
+      <div class='feedback5 hidden'>
+        <p> Your typing skills are below average. Hit 'New game' to continue practising. Pratice makes perfect!</p>
+      </div>
+    </div>
+
+
+
+
+  </main>
+  <audio class=".wrong" src=""></audio>
+</body>
+</html>
