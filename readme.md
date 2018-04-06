@@ -5,11 +5,11 @@
 This game is designed to help track how many words the user types a minute. The user will also be notified with the number of errors they have typed. Happy typing!
 
 
-####Instructions
+#### Instructions
 
 When the user is ready, click the start button to begin. Once sthe start button has been clicked, the input bar will be automatically activated and the user can begin typing. To score points, the user has to correctly type the flashing word above the input bar and hit **SPACE** to generate the next word. But remember time is ticking! When 1 minuted is up, the user will be stoped from typing any more words.
 
-####Technologies used
+#### Technologies used
 
 Below are a list of some the technologies I used in making the game:
 
@@ -42,7 +42,7 @@ What really helped was the use of pseudocode. This allowed me to flesh out any i
 
 
 
-####Future goals
+#### Future goals
 
 Some of the ideas that I want to include in further developemnt of the game are:
 
