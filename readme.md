@@ -4,6 +4,12 @@
 
 This game is designed to help track how many words the user types a minute. The user will also be notified with the number of errors they have typed. Happy typing!
 
+#### Website 
+
+Please find below my website URL:
+
+https://ozzieb93.github.io/Project1/
+
 
 #### Instructions
 
