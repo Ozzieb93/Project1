@@ -63,9 +63,9 @@ h2 {
 
  .novel-display {
   /* border: solid 1px red; */
-  padding: 5px;
+  /* padding: 5px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: middle; */
   /* color: white; */
   visibility: hidden;
 }
@@ -78,7 +78,16 @@ h2 {
   width: 65px;
   text-align: center;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 70px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  100% {
+      color: black;
+  }
 
 }
 
@@ -105,9 +114,16 @@ h2 {
   border-radius: 10px;
   /* text-align: inline-block; */
 }
-.input-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
+input::-webkit-input-placeholder {
+    font-size: 12.5px;
+    color: #5ca1e1;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
+input {
+  opacity: 0.8;
+}
+
 
 
 
@@ -210,6 +226,11 @@ h2 {
 
 }
 
+#start-btn:hover:after {
+  opacity: 1;
+  right: 30px;
+}
+
 #new-game {
   border-radius: 4px;
   background-color: #5ca1e1;
@@ -221,7 +242,7 @@ h2 {
   padding: 8px;
   height: 40px;
   width: 200px;
-  transition: all 0.05s;
+  transition: all 0.5s;
   cursor: pointer;
   margin: 10px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
@@ -242,8 +263,9 @@ h2 {
   margin-bottom: 0;
 }
 
-.wrong-words {
+#wrong-words {
   margin-top: 0;
+  color: crimson;
 }
 .wrong-word-font {
   font-size: 20px;
@@ -255,6 +277,8 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
 }
 .hidden {
   /* border: solid 1px red; */

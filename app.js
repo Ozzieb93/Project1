@@ -19,6 +19,7 @@ $(function(){
   let score = 0;
   let wrongType = 0;
   const timer = false;
+  let backspace = 0;
 
   // scoreApp();
   let textSize = mainText.length;
@@ -34,7 +35,7 @@ $(function(){
     const incorrect = $('#wrong-words').text(wrongType);
 
     if(code !== ' ' ){
-
+      // backspaceListen();
       if(( key !== 8 && regEx.test(code))){
         wordArray += code;
       } else {
@@ -74,6 +75,7 @@ $(function(){
     $('.letter-display').removeAttr('disabled','disabled');
     $('.letter-display').focus();
     $('#start-btn').attr('disabled', true);
+    $( '#current-word' ).stop();
     startTimer();
     // audio3.play();
   });
@@ -92,7 +94,7 @@ $(function(){
   // START TIMER
 
   function startTimer(){
-    let timer = 5;
+    let timer = 60;
     const timerUp = setInterval(function() {
       timer--;
 
@@ -102,6 +104,7 @@ $(function(){
         timer = true;
         gameOver();
         correctImage();
+        // accuracy();
         audio4.play();
         console.log('number of words typed incorectly ' + wrongType);
         clearInterval(timerUp);
@@ -115,17 +118,37 @@ $(function(){
 
     if (score < 10) {
       $('.feedback1').show();
-      // console.log('hello');
-    } else if (score > 10 && score < 15 ) {
+    } else if (score > 0 && score < 10 ) {
       $('.feedback2').show();
       console.log('omg');
-    } else if (score > 15 && score < 20) {
+    } else if (score > 10 && score < 15 ) {
       $('.feedback3').show();
-    } else if (score > 20 && score < 25) {
+      console.log('omg');
+    } else if (score > 15 && score < 25) {
       $('.feedback4').show();
-    } else if (score > 25 && score < 30) {
+    } else if (score > 25 && score < 35) {
       $('.feedback5').show();
+    } else if (score > 35 && score < 45) {
+      $('.feedback6').show();
+    } else if (score > 45 && score < 50) {
+      $('.feedback7').show();
+    } else if (score > 50 && score < 60) {
+      $('.feedback8').show();
     }
   }
+
+  // function accuracy () {
+  //   // const percentage = (( (backspace -score) / wrongType ));
+  //   // console.log(backspace);
+  //   const percentage = 100 -(score-(wrongType/60));
+  //   (percentage).toFixed(2);
+  //   console.log(percentage);
+  // }
+  //
+  // function backspaceListen(){
+  //   if (key === 8);
+  // } backspace++;
+  //   console.log(backspace);
+  // }
 
 });
