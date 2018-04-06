@@ -19,7 +19,7 @@ $(function(){
   let score = 0;
   let wrongType = 0;
   const timer = false;
-  let backspace = 0;
+  // const backspace = 0;
 
   // scoreApp();
   let textSize = mainText.length;

@@ -282,6 +282,6 @@ input {
 }
 .hidden {
   /* border: solid 1px red; */
-  /* align-items: center; */
+  align-items: center;
   font-family: 'Indie Flower', cursive;
 }
