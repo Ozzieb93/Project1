@@ -54,6 +54,4 @@ Some of the ideas that I want to include in further developemnt of the game are:
 * Developing a more interactive user experience with more encouriging sounds and pictures that pop up when words are typed correclty
 * Adding a progress bar that fills when the user types a certain number of words in a row without making a mistake
 * Proivde more detailed feeback for the user after a trun is complete. This feeback could include typing accurancy, adjustments to the postion of the hands
-
-
-
+* In the future firebox will be added 
